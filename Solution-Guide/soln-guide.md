@@ -205,8 +205,7 @@ In this challenge, you will create a multi-agent system that takes the user's re
    - **ResourceGroupName Infrastructure Parameter**: Type **CapstoneEnv** **(4)** and press **Enter**.
    - **Resource Group to use**: Select **CapstoneEnv** **(5)** from the options and press **Enter**.
 
-
-   ![](./Images/Image38.png)
+      ![](./Images/Image38.png)
 
    - **Note:** Wait for 5 minutes until the command runs completely. 
 
