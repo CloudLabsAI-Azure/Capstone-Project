@@ -28,7 +28,7 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
     - Subscription: Keep the default subscription **(1)**.
 
-    - Resource Group: Click on **Create new (2)**, provide the name as **openaiagents** and click on OK.
+    - Resource Group: select **openaiagents**.
 
     - Region: **East US 2 (3)**
 
@@ -199,11 +199,11 @@ In this challenge, you will create a multi-agent system that takes the user's re
     ```
 1. When running the **azd up** command, you'll be asked to provide configuration details interactively. Provide the following values when prompted:
 
-   - **Unique Environment Name**: Enter **CapstoneEnv-<inject key="Deployment ID" enableCopy="false"/>** **(1)**.
+   - **Unique Environment Name**: Enter **CapstoneEnv** **(1)**.
    - **Azure Subscription to use**: Choose the default subscription **(2)** that appears and press **Enter**.
    - **Location Infrastructure Parameter**: Select **East US 2** **(3)** from the options and press **Enter**.
-   - **ResourceGroupName Infrastructure Parameter**: Type **CapstoneEnv-<inject key="Deployment ID" enableCopy="false"/>** **(4)** and press **Enter**.
-   - **Resource Group to use**: Select **CapstoneEnv-<inject key="Deployment ID" enableCopy="false"/>** **(5)** from the options and press **Enter**.
+   - **ResourceGroupName Infrastructure Parameter**: Type **CapstoneEnv** **(4)** and press **Enter**.
+   - **Resource Group to use**: Select **CapstoneEnv** **(5)** from the options and press **Enter**.
 
 
    ![](./Images/Image38.png)
