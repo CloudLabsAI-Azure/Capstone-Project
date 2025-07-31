@@ -2,8 +2,9 @@ import streamlit as st
 import asyncio
 import logging
 from chat import process_message, reset_chat_history
-from multi_agent import run_multi_agent
-
+from multi_agent import run_multi_agent, reset_multi_agent_chat_history
+from semantic_kernel.contents.chat_message_content import ChatMessageContent
+from semantic_kernel.contents.utils.author_role import AuthorRole
 
 #Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -32,6 +33,7 @@ def render_chat_ui(title, on_submit):
                 reset_chat_history()
             elif title == "Multi-Agent":
                 st.session_state.multi_agent_history = []
+                reset_multi_agent_chat_history()
   
     # Styling adjustments for the form
     st.markdown(
@@ -85,15 +87,14 @@ def multi_agent():
     def on_multi_agent_submit(user_input):
         if user_input:
             try:
-                st.session_state.multi_agent_history.append({"role": "user", "message": user_input})
+                st.session_state.multi_agent_history.append(ChatMessageContent(role=AuthorRole.USER, content=user_input))
                 with st.spinner("Agents are collaborating..."):
-                    result = asyncio.run(run_multi_agent(user_input))
+                    messages = asyncio.run(run_multi_agent(user_input))
                     # Fix: Extract messages from the result dictionary and map content to message
-                    for response in result["messages"]:
-                        st.session_state.multi_agent_history.append({
-                            "role": response["role"],
-                            "message": response["content"]
-                        })
+                    ##for response in result["messages"]:
+                    if messages is not None:
+                        for chatMessage in messages:
+                            st.session_state.multi_agent_history.append(chatMessage)
 
             except Exception as e:
                 logging.error(f"Error in multi-agent system: {e}")
@@ -109,10 +110,10 @@ def display_chat_history(chat_history):
     """Display chat history."""
     with st.container():
         for chat in chat_history:
-            if chat["role"] == "user":
-                st.markdown(f"**User**: {chat['message']}")
+            if chat.role == "user":
+                st.markdown(f"**User**: {chat.content}")
             else:
-                st.markdown(f"**{chat['role']}**: {chat['message']}")
+                st.markdown(f"**{chat.name}**: {chat.content}")
 
 def main():
     """Main function to run the app."""

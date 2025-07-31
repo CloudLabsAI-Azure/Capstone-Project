@@ -2,6 +2,8 @@ import logging
 from dotenv import load_dotenv
 from semantic_kernel import Kernel
 from semantic_kernel.contents.chat_history import ChatHistory
+from semantic_kernel.connectors.ai.chat_completion_client_base import ChatCompletionClientBase
+
 #Import Modules
 
 # Add Logger

@@ -19,6 +19,6 @@ COPY . .
 
 # Expose the application port
 EXPOSE 80
-RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
-# do not change the arguments
+RUN apt-get update && apt-get install -y git && apt-get install -y curl && apt-get install -y coreutils && rm -rf /var/lib/apt/lists/*
+# do not change the arguments-y 
 CMD ["streamlit", "run", "app.py", "--server.headless=true", "--server.port=80", "--server.address=0.0.0.0"]
