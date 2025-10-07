@@ -20,9 +20,9 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
    ![](./Images/Image1.png)
 
-1. On the **Azure Open AI (1)** content page, click on **+ create(2)**.
+1. On the **Azure Open AI (1)** content page, click on **+ create (2)** and select **Azure OpenAi (3)**.
 
-   ![](./Images/Image2.png)
+   ![](./Images/T103.png)
 
 1. Provide the following details and click on **Next**:
 
@@ -36,13 +36,17 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
     - Pricing Tier: **Standard SO (5)**
 
-   ![](./Images/Image3.png)
+      ![](./Images/T104.png)
 
 1. Click on Next twice and click on **Review + Submit**.
 
 1. Review all the values and click on **Create**.
 
+   ![](./Images/T106.png)
+
 1. Once the deployment is complete, click on **Go to resource**
+
+   ![](./Images/T107.png)
 
 1. In the Azure OpenAI resource pane, click on **Go to Azure AI Foundry portal**, it will navaigate to Azure AI Foundry portal.
 
@@ -64,11 +68,11 @@ In this challenge, you will create a multi-agent system that takes the user's re
     - Set the **Tokens per Minute Rate Limit** to **200k (4)**.
     - Leave the other values to default and click on **Deploy (5)**.
 
-   ![](./Images/Image7a.png)
+      ![](./Images/T111.png)
 
 1. Once the gpt-4o deployment gets completed, copy the **Target URI (1)** and **Key (2)**. **Paste** these values in a notepad for further use. 
 
-   ![](./Images/Image8.png)
+   ![](./Images/T112.png)
 
 1. Open VS Code on your Lab VM. Click on **File (1)** and select **Open Folder (2)**.
 
@@ -105,7 +109,7 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
 1. Once the new repository is created, **copy the URL** of your repo and paste it into a notepad for future use.
  
-   ![](./Images/Image25.png)
+   ![](./Images/T203.png)
 
 1. Click your **profile picture (1)** at the top-right corner and select **Settings (2)** from the dropdown menu.
  
@@ -115,9 +119,9 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
    ![](./Images/Image18.png)
 
-1. Expand **Personal access tokens** from the left panel. Select **Fine-grained tokens(1)** and click on **Generate new token (2)**.
+1. Expand **Personal access tokens (1)** from the left panel. Select **Fine-grained tokens(2)** and click on **Generate new token (3)**.
 
-   ![](./Images/Image19.png)
+   ![](./Images/T206.png)
   
 1. Enter **<inject key="Deployment ID" enableCopy="false"/>-PAT-RepoAccess** **(1)** as the name for your token. Set an expiration date to **30 days (2)**.  
 
@@ -129,7 +133,9 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
 1. Under **Permissions**, expand **Repository Permissions (1)**. Provide **Read and Write (3)** access for **Contents (2)** under Repository permissions.
 
-   ![](./Images/Image22.png)  
+   ![](./Images/Image22.png) 
+
+   >**Note:** If you are not able to see any permissions click on add permissions and select contents.
 
 1. Scroll down to the bottom of the page, click **Generate token (1)**, and in the popup, review the permissions and click **Generate token (2)**.
 
@@ -228,7 +234,7 @@ In this challenge, you will create a multi-agent system that takes the user's re
     ```
    - **Note:** Wait until the agents collaborate and provide a reply.
 
-    ![](./Images/Image32.png)
+      ![](./Images/Image32.png)
 
 1. Once it runs and provides the code and other details, type **approved (1)** and select **send (2)** to approve the code. At the end of the chat, you can observe that the code is being pushed to the repository after approval.
 
