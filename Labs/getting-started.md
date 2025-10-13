@@ -100,6 +100,18 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 5. If prompted to **stay signed in**, you can click **No**.
 6. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
 
+## Steps to sign in to the github.
+
+1. Open a new browser tab and navigate to the following URL:  **[https://github.com/login](https://github.com/login)**
+
+   ![Enter Your Password](./media/200.png)
+
+1. On the **Sign in to GitHub** page, enter your personal Github credentials in **Username (1)** and **Password (2)** then click on **sign in (3)**.
+
+   ![Enter Your Password](./media/201.png)
+
+1. If prompted for a verification code, enter the **GitHub verification code** received in your registered email or authentication app.
+
 ## Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible
 
 1. At the **"More information required"** prompt, select **Next**.
