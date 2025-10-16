@@ -45,7 +45,7 @@ Quando estiver pronto para começar, sua máquina virtual e o **guia do laborat�
 
 ## Zoom In/Zoom Out do Guia do Laboratório
 
-Para ajustar o nível de zoom na página do ambiente, clique no ícone **A↕ : 100%** localizado ao lado do temporizador no ambiente do laboratório.
+Para ajustar o nível de zoom na página do ambiente, clique no ícone **A↕ : 100%** localizado ao lado do temporizador no ambiente do laboratório
 
 ![](./media/Agg2.png)
 
