@@ -107,6 +107,18 @@ Azure Agentic AI 워크숍에 오신 것을 환영합니다. 이 환경을 최�
 5. **로그인 상태를 유지** 하라는 메시지가 표시되면 **아니요** 를 클릭할 수 있습니다.
 6. **Microsoft Azure 시작** 팝업 창이 나타나면 **"취소"** 를 클릭하여 둘러보기를 건너뜁니다.
 
+## GitHub에 로그인하는 단계
+
+1. 새 브라우저 탭을 열고 다음 URL로 이동하세요: **[https://github.com/login](https://github.com/login)**
+
+   ![Enter Your Password](./media/Git1.png)
+
+1. ‘Sign in to GitHub’ 페이지에서 사용자 이름(1)과 비밀번호(2)를 입력한 다음 을 클릭하세요.
+
+   ![Enter Your Password](./media/Git2.png)
+
+1. 확인 코드 입력을 요청받으면, 등록된 이메일이나 인증 앱으로 받은 GitHub 인증 코드를 입력하세요.
+
 ## "나중에 확인" 옵션이 표시되지 않는 경우 MFA 설정을 진행하는 단계
 
 1. **"추가 정보 필요"** 메시지가 표시되면 **다음**을 선택하세요.
