@@ -90,6 +90,18 @@
 5. 如果提示是否 **stay signed in**，你可以点击 **No**。  
 6. 如果出现 **Welcome to Microsoft Azure** 弹窗，直接点击 **"Cancel"** 跳过介绍。
 
+## 登录 GitHub 的步骤。
+
+1. 打开新的浏览器标签页，并访问以下 URL：**[https://github.com/login](https://github.com/login)**
+
+   ![输入你的密码](./media/Git1.png)
+
+1. 在 “Sign in to GitHub” 页面中，在 **Username (1)** 和 **Password（2）** 处输入你的个人 GitHub 凭据，然后点击 **“Sign in”（3）。**
+
+   ![输入你的密码](./media/Git2.png)
+
+1. 如果系统提示输入验证码，请输入发送到你已注册邮箱或身份验证应用中的 GitHub 验证码。
+
 ## 如果没有看到“稍后提醒”选项，进行 MFA 设置的步骤
 
 1. 在 **"需要更多信息"** 提示时，选择 **Next**。
