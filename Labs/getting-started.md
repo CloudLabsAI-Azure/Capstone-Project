@@ -101,6 +101,18 @@ Siéntete libre de **start, stop, or restart (2)** tu máquina virtual según se
 5. Si te preguntan si deseas **stay signed in**, puedes hacer clic en **No**.
 6. Si aparece una ventana emergente de **Welcome to Microsoft Azure**, simplemente haz clic en **"Cancel"** para saltarte el recorrido.
 
+## Pasos para iniciar sesión en GitHub.
+
+1. Abre una nueva pestaña del navegador y navega a la siguiente URL: **[https://github.com/login](https://github.com/login)**
+
+   ![Enter Your Password](./media/Git1.png)
+
+1. En la página “Sign in to GitHub”, introduce tus credenciales personales de GitHub en **Username (1)** y **Password (2)**, y luego haz clic en **“Sign in” (3)**.
+
+   ![Enter Your Password](./media/Git2.png)
+
+1. Si se te solicita un código de verificación, introduce el código de verificación de GitHub recibido en tu correo electrónico registrado o en tu aplicación de autenticación.
+
 ## Pasos para continuar con la configuración de MFA si la opción "Ask Later" no está visible
 
 1. En el aviso **"More information required"**, selecciona **Next**.
