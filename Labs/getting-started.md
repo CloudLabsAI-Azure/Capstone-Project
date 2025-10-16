@@ -92,7 +92,19 @@ Sinta-se à vontade para **iniciar, parar ou reiniciar (2)** sua máquina virtua
 
 4. Se a janela pop-up **Action required** aparecer, clique em **Ask later**.  
 5. Se for solicitado para **manter-se conectado**, você pode clicar em **No**.  
-6. Se a janela pop-up **Welcome to Microsoft Azure** aparecer, simplesmente clique em **"Cancel"** para pular o tour.  
+6. Se a janela pop-up **Welcome to Microsoft Azure** aparecer, simplesmente clique em **"Cancel"** para pular o tour.
+
+## Passos para entrar no GitHub
+
+1. Abra uma nova guia do navegador e acesse a seguinte URL: **[https://github.com/login](https://github.com/login)**
+
+   ![Digite sua senha](./media/Git1.png)
+
+1. Na página Sign in to GitHub, insira suas credenciais pessoais do GitHub em **Username (1)** e **Password (2)** e, em seguida, clique em **Sign in (3)**.
+
+   ![Digite sua senha](./media/Git2.png)
+
+1. Se for solicitado um código de verificação, insira o código de verificação do GitHub recebido no seu e-mail registrado ou no aplicativo de autenticação.
 
 
 ## Passos para Configurar o MFA Caso a Opção "Ask Later" Não Esteja Visível
