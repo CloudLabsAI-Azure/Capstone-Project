@@ -7,7 +7,7 @@
 この課題では、ユーザーのリクエストを受け入れ、それぞれが特定のペルソナと専門分野で設計されたエージェントのコレクションを通じて処理するマルチエージェントシステムを作成します。エージェントは個別にリクエストを分析し、定義された責任に基づいて応答を提供します。最終的な出力は、すべてのエージェントからの回答の統合コレクションであり、各ペルソナの独自の視点を反映する方法でユーザーのクエリに協力して対処します。
 
 
-## タスク 1 - Azure AI Foundry モデルのデプロイと環境の構成
+## タスク 1 - Microsoft Foundry モデルのデプロイと環境の構成
 
 1. **Azure OpenAI Service のデプロイ:**
 
@@ -21,9 +21,9 @@
 
 1. **Azure OpenAI モデルをデプロイします。**
    
-    - Azure OpenAI には、モデルのデプロイ、管理、探索に使用できる Azure AI Foundry Portal という名前の Web ベースのポータルが用意されています。Azure OpenAI の調査を開始するには、Azure AI Foundry を使用してモデルをデプロイします。
+    - Azure OpenAI には、モデルのデプロイ、管理、探索に使用できる Microsoft Foundry Portal という名前の Web ベースのポータルが用意されています。Azure OpenAI の調査を開始するには、Microsoft Foundry portal を使用してモデルをデプロイします。
     
-    - 概要ウィンドウから Azure AI Foundry ポータルを起動し、Azure OpenAI モデル (gpt-4o) をデプロイします。
+    - 概要ウィンドウから Microsoft Foundry ポータルを起動し、Azure OpenAI モデル (gpt-4o) をデプロイします。
 
         >- **手記:** デプロイの名前が gpt-4o であることを確認します。
         >- **手記:** [デプロイの種類] が [グローバル標準] に設定されていることを確認し、モデル バージョンに 2024-11-20 を使用します。
@@ -32,7 +32,7 @@
 
         >- **ヒント:** API バージョンは、ターゲット URI から取得できます。
 
-1. Azure AI Foundry デプロイの詳細で .env ファイルを更新します。
+1. Microsoft Foundry デプロイの詳細で .env ファイルを更新します。
 
     ```
     AZURE_OPENAI_CHAT_DEPLOYMENT_NAME=Replace with your deployment name
@@ -139,13 +139,13 @@ Azure を使用してアプリをオンラインでホストするには、次�
 
 1. コマンドを azd up 実行すると、構成の詳細を対話形式で提供するように求められます。プロンプトが表示されたら、次の値を指定します。
 
-   - **Unique Environment Name**: Enter **CapstoneEnv-<inject key="Deployment ID" enableCopy="false"/>** **(1)** .
-   - **Azure Subscription to use**: Choose the default subscription **(2)** that appears and press **Enter**.
-   - **Location Infrastructure Parameter**: Select **East US 2** **(3)** from the options and press **Enter**.
-   - **ResourceGroupName Infrastructure Parameter**: Type **CapstoneEnv-<inject key="Deployment ID" enableCopy="false"/>** **(4)** and press **Enter**.
-   - **Resource Group to use**: Select **CapstoneEnv-<inject key="Deployment ID" enableCopy="false"/>** **(5)** from the options and press **Enter**.
+   - **Unique Environment Name**: Enter **CapstoneEnv**.
+   - **Azure Subscription to use**: Choose the default subscription that appears and press **Enter**.
+   - **Location Infrastructure Parameter**: Select **East US 2** from the options and press **Enter**.
+   - **ResourceGroupName Infrastructure Parameter**: Type **CapstoneEnv** and press **Enter**.
+   - **Resource Group to use**: Select **CapstoneEnv** from the options and press **Enter**.
 
-1. Azure portal を開き、リソース グループ **CapstoneEnv-<inject key="Deployment ID" enableCopy="false"/>** に移動します。.
+1. Azure portal を開き、リソース グループ **CapstoneEnv** に移動します。.
 1. デプロイされたコンテナ アプリ リソースを見つけます。
 1. コンテナアプリのエンドポイントURLをコピーします。
 1. ブラウザでこのエンドポイントにアクセスして Web アプリにアクセスし、アプリケーションが期待どおりに機能することを確認します。
@@ -187,4 +187,4 @@ Azure を使用してアプリをオンラインでホストするには、次�
 
 ## 結論
 
-この課題では、Azure AI Foundry とセマンティック カーネルを使用してマルチエージェント システムを構築し、調整する方法を示しました。ビジネス アナリスト、ソフトウェア エンジニア、プロダクト オーナーの個別のペルソナを設計し、終了戦略を使用してグループ チャット環境を構成することで、要件の収集、コードの開発、コード レビューの実行が可能な協調的な AI ワークフローを作成しました。タスク構造により、自律的でインタラクティブなエージェントを使用して、複雑な問題をスケーラブルかつ分散的に処理できます。
+この課題では、Microsoft Foundry とセマンティック カーネルを使用してマルチエージェント システムを構築し、調整する方法を示しました。ビジネス アナリスト、ソフトウェア エンジニア、プロダクト オーナーの個別のペルソナを設計し、終了戦略を使用してグループ チャット環境を構成することで、要件の収集、コードの開発、コード レビューの実行が可能な協調的な AI ワークフローを作成しました。タスク構造により、自律的でインタラクティブなエージェントを使用して、複雑な問題をスケーラブルかつ分散的に処理できます。
