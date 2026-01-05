@@ -7,7 +7,7 @@
 在这项挑战中，您将创建一个多代理系统，该系统接受用户的请求并通过一组代理进行处理，每个代理都根据特定的角色和专业领域进行设计。座席将单独分析请求，并根据他们定义的职责提供他们的响应。最终输出将是来自所有代理的答案的整合集合，以反映每个角色独特视角的方式协作解决用户的查询。
 
 
-## 任务 1 - Azure AI Foundry 模型部署与环境配置
+## 任务 1 - Microsoft Foundry 模型部署与环境配置
 
 
 1. **部署 Azure OpenAI 服务：**
@@ -23,9 +23,9 @@
 
 1. **部署 Azure OpenAI 模型：**
 
-    - Azure OpenAI 提供了一个名为 **Azure AI Foundry Portal** 的基于网页的门户，供你部署、管理和探索模型。你将通过使用 Azure AI Foundry 来部署模型，开始探索 Azure OpenAI。
+    - Azure OpenAI 提供了一个名为 **Microsoft Foundry Portal** 的基于网页的门户，供你部署、管理和探索模型。你将通过使用 Microsoft Foundry 来部署模型，开始探索 Azure OpenAI。
 
-    - 从概览面板启动 Azure AI Foundry Portal，并部署一个 Azure OpenAI 模型，例如 `gpt-4o`。
+    - 从概览面板启动 Microsoft Foundry Portal，并部署一个 Azure OpenAI 模型，例如 `gpt-4o`。
 
         >- **注意：** 确保部署名称为 **gpt-4o**。  
         >- **注意：** 确保部署类型设置为 **Global Standard**，模型版本使用 **2024-11-20**。
@@ -34,7 +34,7 @@
 
         >- **提示：** API 版本可以从目标 URI 中获取。
 
-1. 使用 Azure AI Foundry 部署详情更新 `.env` 文件：
+1. 使用 Microsoft Foundry 部署详情更新 `.env` 文件：
 
     ```
     AZURE_OPENAI_CHAT_DEPLOYMENT_NAME=Azure OpenAI 聊天部署名称
@@ -136,13 +136,13 @@
 
 1. 运行 **azd up** 命令时，系统会交互式地要求你提供配置详情。请按提示输入以下值：
 
-   - **唯一环境名称**：输入 **CapstoneEnv-<inject key="Deployment ID" enableCopy="false"/>** **(1)**。
-   - **要使用的 Azure 订阅**：选择出现的默认订阅 **(2)**，然后按 **Enter**。
-   - **基础设施位置参数**：从选项中选择 **East US 2** **(3)**，然后按 **Enter**。
-   - **ResourceGroupName 基础设施参数**：输入 **CapstoneEnv-<inject key="Deployment ID" enableCopy="false"/>** **(4)**，然后按 **Enter**。
-   - **要使用的资源组**：从选项中选择 **CapstoneEnv-<inject key="Deployment ID" enableCopy="false"/>** **(5)**，然后按 **Enter**。
+   - **唯一环境名称**：输入 **CapstoneEnv**。
+   - **要使用的 Azure 订阅**：选择出现的默认订阅 ，然后按 **Enter**。
+   - **基础设施位置参数**：从选项中选择 **East US 2**，然后按 **Enter**。
+   - **ResourceGroupName 基础设施参数**：输入 **CapstoneEnv**，然后按 **Enter**。
+   - **要使用的资源组**：从选项中选择 **CapstoneEnv**，然后按 **Enter**。
 
-1. 打开 Azure 门户，导航到资源组 **CapstoneEnv-<inject key="Deployment ID" enableCopy="false"/>**。
+1. 打开 Azure 门户，导航到资源组 **CapstoneEnv**。
 1. 找到已部署的容器应用资源。
 1. 复制容器应用的端点 URL。
 1. 在浏览器中访问该端点，验证应用程序是否按预期运行。
@@ -184,4 +184,4 @@
 
 ## 结论
 
-本挑战演示了如何使用 Azure AI Foundry 和 Semantic Kernel 构建及协调多智能体系统。通过为业务分析师、软件工程师和产品负责人设计不同的角色，并配置具有终止策略的群聊环境，您创建了一个能够协作完成需求收集、代码开发和代码审查的 AI 工作流。该任务结构支持使用自治且交互的智能体对复杂问题进行可扩展和去中心化的处理。
+本挑战演示了如何使用 Microsoft Foundry 和 Semantic Kernel 构建及协调多智能体系统。通过为业务分析师、软件工程师和产品负责人设计不同的角色，并配置具有终止策略的群聊环境，您创建了一个能够协作完成需求收集、代码开发和代码审查的 AI 工作流。该任务结构支持使用自治且交互的智能体对复杂问题进行可扩展和去中心化的处理。
