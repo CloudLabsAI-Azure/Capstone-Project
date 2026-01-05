@@ -61,7 +61,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 ## Managing Your Virtual Machine
 
-Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
 ![Manage Your Virtual Machine](./media/agg5.png)
 
@@ -106,7 +106,7 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
    ![Enter Your Password](./media/200.png)
 
-1. On the **Sign in to GitHub** page, enter your personal Github credentials in **Username (1)** and **Password (2)** then click on **sign in (3)**.
+1. On the **Sign in to GitHub** page, enter your personal Github credentials in **Username (1)** and **Password (2)** then click on **Sign in (3)**.
 
    ![Enter Your Password](./media/201.png)
 
