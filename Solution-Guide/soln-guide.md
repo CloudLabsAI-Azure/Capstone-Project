@@ -16,15 +16,15 @@ In this challenge, you will create a multi-agent system that takes the user's re
     - **Email/Username**: <inject key="AzureAdUserEmail"></inject>
     - **Password**: <inject key="AzureAdUserPassword"></inject>
 
-1. Search and Select Open AI. 
+1. Search for **Azure OpenAI (1)** and select **Azure OpenAI (2)** from the Services . 
 
-   ![](./Images/Image1.png)
+   ![](./Images/t1s2.png)
 
-1. On the **Azure Open AI (1)** content page, click on **+ create (2)** and select **Azure OpenAi (3)**.
+1. On the **Azure OpenAI (1)** content page, click on **+ Create (2)** and select **Azure OpenAI (3)**.
 
-   ![](./Images/T103.png)
+   ![](./Images/t1s3.png)
 
-1. Provide the following details and click on **Next**:
+1. Provide the following details and click on **Next (6)**:
 
     - Subscription: Keep the default subscription **(1)**.
 
@@ -36,29 +36,29 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
     - Pricing Tier: **Standard SO (5)**
 
-      ![](./Images/T104.png)
+      ![](./Images/t1s4.png)
 
-1. Click on Next twice and click on **Review + Submit**.
+1. Click on **Next twice** and click on **Review + Submit**.
 
 1. Review all the values and click on **Create**.
 
-   ![](./Images/T106.png)
+   ![](./Images/t1s6.png)
 
 1. Once the deployment is complete, click on **Go to resource**
 
-   ![](./Images/T107.png)
+   ![](./Images/gtr.png)
 
-1. In the Azure OpenAI resource pane, click on **Go to Azure AI Foundry portal**, it will navaigate to Azure AI Foundry portal.
+1. In the Azure OpenAI resource pane, click on **Go to Foundry portal**, it will navaigate to Microsoft Foundry portal.
 
-   ![](./Images/Image4.png)
+   ![](./Images/t1s8.png)
 
-1. On the left panel select **Deployments (1)**. Click on **+ Deploy Model (2)** and select **Deploy Base Model (3)**.
+1. On the left panel under **Shared resources** select **Deployments (1)** . Click on **+ Deploy model (2)** and select **Deploy base model (3)**.
 
-   ![](./Images/Image5.png)
+   ![](./Images/t1s9.png)
 
 1. Search for **gpt-4o (1)**, **select it (2)**, and click on **Confirm (3)**.
 
-   ![](./Images/Image6.png)
+   ![](./Images/t1s10.png)
 
 1. Click on **Customize** and provide the following details to deploy a gpt-4o model:
 
@@ -68,9 +68,9 @@ In this challenge, you will create a multi-agent system that takes the user's re
     - Set the **Tokens per Minute Rate Limit** to **200k (4)**.
     - Leave the other values to default and click on **Deploy (5)**.
 
-      ![](./Images/T111.png)
+      ![](./Images/t1s11.png)
 
-1. Once the gpt-4o deployment gets completed, copy the **Target URI (1)** and **Key (2)**. **Paste** these values in a notepad for further use. 
+1. Once the gpt-4o deployment gets completed, copy the **Target URl (1)** and **Key (2)**. **Paste** these values in a notepad for further use. 
 
    ![](./Images/T112.png)
 
@@ -82,11 +82,11 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
    ![](./Images/Image10a.png)
 
-1. Select the **checkbox (1)** and click **Yes,I trust the authors(2)** to proceed.
+1. Select the **checkbox (1)** and click **Yes,I trust the authors (2)** to proceed.
 
    ![](./Images/Image11a.png)
 
-1. Expand the **src/ui** folder, rename the file from **Sample.env** to **.env**.
+1. Expand the **src/ui** folder and rename the file named **Sample.env** to **.env**.
 
    ![](./Images/Image12a.png)
 
@@ -125,7 +125,7 @@ In this challenge, you will create a multi-agent system that takes the user's re
   
 1. Enter **<inject key="Deployment ID" enableCopy="false"/>-PAT-RepoAccess** **(1)** as the name for your token. Set an expiration date to **30 days (2)**.  
 
-   ![](./Images/Image20.png)
+   ![](./Images/upImage20.png)
 
 1. Scroll down and under **Repository Access**, click on **Only select repositories (1)**. Search for the **Capstone-Project-<inject key="Deployment ID" enableCopy="false"/> repository** **(2)** and **select it (3)**.
 
@@ -135,11 +135,13 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
    ![](./Images/Image22.png) 
 
-   >**Note:** If you are not able to see any permissions click on add permissions and select contents.
+   >**Note:** If you are not able to see any permissions click on **Add permissions (1)** and select **Contents (2)** and then provide **Read and Write** access.
+
+   ![](./Images/contents.png)
 
 1. Scroll down to the bottom of the page, click **Generate token (1)**, and in the popup, review the permissions and click **Generate token (2)**.
 
-   ![](./Images/Image23.png)  
+   ![](./Images/gt.png)  
 
 1. **Copy (1)** the generated token and **paste** it into a notepad for future use.
 
@@ -157,7 +159,7 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
     ![](./Images/Image14a.png)
 
-1. Create a file named `push_to_github.sh` under the `src/ui` directory. Paste the code from the link below and save the file.
+1. Create a file named **`push_to_github.sh` (2)** under the **`src/ui` (1)** directory. **Paste the code (3)** from the link below and save the file.
 
     ```
     https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Capstone-Project/refs/heads/soln-guide/src/ui/push_to_github.sh
@@ -176,9 +178,9 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
 1. In the .env file, click on **CRLF (1)** in the bottom Status Bar and change it to **LF (2)** by selecting it. Save the file after making this change.
 
-    ![](./Images/Image35.png)
+    ![](./Images/upImage35.png)
 
-1. Verify that **LF** is selected in the push_to_github.sh file as well.
+1. Verify that **LF** is selected in the **push_to_github.sh** file as well.
 
     ![](./Images/Image36.png)
 
@@ -211,34 +213,37 @@ In this challenge, you will create a multi-agent system that takes the user's re
    - **ResourceGroupName Infrastructure Parameter**: Type **CapstoneEnv** **(4)** and press **Enter**.
    - **Resource Group to use**: Select **CapstoneEnv** **(5)** from the options and press **Enter**.
 
-      ![](./Images/Image38.png)
+      ![](./Images/azup.png)
 
    - **Note:** Wait for 5 minutes until the command runs completely. 
 
 ## Task 4 - Multi-Agent Code Generation and Repository Integration
 
-1. Navigate to the azure portal, and select the newly created Resource group named **rg-CapstoneEnv<inject key="Deployment ID" enableCopy="false"/>**.
+1. Navigate to the azure portal, and select the newly created Resource group named **CapstoneEnv**.
 
 1. Open the container app with prefix **dev-ui-**.
 
-    ![](./Images/Image30.png)
+    ![](./Images/cp.png)
 
 1. Click on the **Application URL** present on the Overview page of the Container app.
 
-    ![](./Images/Image31.png)
+    ![](./Images/apurl.png)
 
-1. The Streamlit chat application will open. Try providing the **below prompt (1)** in the chat and click on **send**.
+1. The Streamlit chat application will open. Try providing the **below prompt (1)** in the chat and click on **Send (2)**.
 
     ```
     Create code for simple calculator
     ```
-   - **Note:** Wait until the agents collaborate and provide a reply.
 
       ![](./Images/Image32.png)
 
-1. Once it runs and provides the code and other details, type **approved (1)** and select **send (2)** to approve the code. At the end of the chat, you can observe that the code is being pushed to the repository after approval.
+   >**Note:** Wait until the agents collaborate and provide a reply.
+
+1. Once it runs and provides the code and other details, type **Approved (1)** and select **Send (2)** to approve the code. At the end of the chat, you can observe that the code is being pushed to the repository after approval.
 
     ![](./Images/Image33.png)
+
+   >**Note:** Once you approve it, scroll down to check status that the file is being pushed to GitHub.
 
     ![](./Images/Image34.png)
 
