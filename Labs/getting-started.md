@@ -31,7 +31,7 @@
 
 ## 实验入门
 
-欢迎参加你的 Azure Agentic AI Workshop，让我们充分利用这次体验，开始吧：
+欢迎参加你的 Capstone Project Workshop，让我们充分利用这次体验，开始吧：
 
 ## 访问你的实验环境
 
