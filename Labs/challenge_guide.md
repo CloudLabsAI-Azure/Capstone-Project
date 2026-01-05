@@ -7,7 +7,7 @@ Los Sistemas Multi-Agente (MAS) consisten en múltiples agentes autónomos, cada
 En este desafío, crearás un `Multi-Agent System` que acepta la solicitud de un usuario y la procesa a través de una colección de agentes, cada uno diseñado con una persona específica y área de especialización. Los agentes analizarán individualmente la solicitud y contribuirán con sus respuestas basándose en sus responsabilidades definidas. La salida final será una colección consolidada de respuestas de todos los agentes, abordando colaborativamente la consulta del usuario de una manera que refleje la perspectiva única de cada persona.
 
 
-## Tarea 1 - Implementación del Modelo de Azure AI Foundry y Configuración del Entorno
+## Tarea 1 - Implementación del Modelo de Microsoft Foundry y Configuración del Entorno
 
 
 1. **Despliegue del Servicio Azure OpenAI:**
@@ -23,9 +23,9 @@ En este desafío, crearás un `Multi-Agent System` que acepta la solicitud de un
 
 1. **Desplegar Modelos de Azure OpenAI:**
 
-    - Azure OpenAI proporciona un portal web llamado **Azure AI Foundry Portal** que puedes usar para desplegar, administrar y explorar modelos. Comenzarás tu exploración de Azure OpenAI utilizando Azure AI Foundry para desplegar un modelo.
+    - Azure OpenAI proporciona un portal web llamado **Microsoft Foundry Portal** que puedes usar para desplegar, administrar y explorar modelos. Comenzarás tu exploración de Azure OpenAI utilizando Microsoft Foundry para desplegar un modelo.
 
-    - Inicia el portal Azure AI Foundry desde el panel de resumen y despliega un modelo de Azure OpenAI, es decir, `gpt-4o`.
+    - Inicia el portal Microsoft Foundry desde el panel de resumen y despliega un modelo de Azure OpenAI, es decir, `gpt-4o`.
 
         >- **Nota:** Asegúrate de que los despliegues se nombren **gpt-4o**.  
         >- **Nota:** Verifica que el Tipo de Despliegue esté configurado como **Global Standard** y utiliza **2024-11-20** para la versión del modelo.
@@ -34,7 +34,7 @@ En este desafío, crearás un `Multi-Agent System` que acepta la solicitud de un
 
         >- **Pista:** La versión API puede obtenerse desde el URI de destino.
 
-1. Actualiza el archivo `.env` con los detalles del despliegue de Azure AI Foundry:
+1. Actualiza el archivo `.env` con los detalles del despliegue de Microsoft Foundry:
 
     ```
     AZURE_OPENAI_CHAT_DEPLOYMENT_NAME=Reemplaza con el nombre de tu despliegue
@@ -142,13 +142,13 @@ Para alojar tu aplicación en línea usando Azure, sigue estos pasos para conten
 
 1. Al ejecutar el comando **azd up**, se te pedirá que proporciones detalles de configuración de forma interactiva. Proporciona los siguientes valores cuando se te solicite:
 
-   - **Nombre Único del Entorno**: Ingresa **CapstoneEnv-<inject key="Deployment ID" enableCopy="false"/>** **(1)**.
-   - **Suscripción de Azure a usar**: Elige la suscripción predeterminada **(2)** que aparece y presiona **Enter**.
-   - **Parámetro de Infraestructura Location**: Selecciona **East US 2** **(3)** de las opciones y presiona **Enter**.
-   - **Parámetro de Infraestructura ResourceGroupName**: Escribe **CapstoneEnv-<inject key="Deployment ID" enableCopy="false"/>** **(4)** y presiona **Enter**.
-   - **Grupo de Recursos a usar**: Selecciona **CapstoneEnv-<inject key="Deployment ID" enableCopy="false"/>** **(5)** de las opciones y presiona **Enter**.
+   - **Nombre Único del Entorno**: Ingresa **CapstoneEnv**.
+   - **Suscripción de Azure a usar**: Elige la suscripción predeterminada que aparece y presiona **Enter**.
+   - **Parámetro de Infraestructura Location**: Selecciona **East US 2** de las opciones y presiona **Enter**.
+   - **Parámetro de Infraestructura ResourceGroupName**: Escribe **CapstoneEnv** y presiona **Enter**.
+   - **Grupo de Recursos a usar**: Selecciona **CapstoneEnv** de las opciones y presiona **Enter**.
 
-1. Abre el portal de Azure y navega al grupo de recursos **CapstoneEnv-<inject key="Deployment ID" enableCopy="false"/>**.  
+1. Abre el portal de Azure y navega al grupo de recursos **CapstoneEnv**.  
 2. Localiza el recurso de la aplicación de contenedor desplegada.  
 3. Copia la URL del endpoint de la aplicación de contenedor.  
 4. Accede a la aplicación web visitando este endpoint en tu navegador y verifica que la aplicación funcione según lo esperado. 
@@ -189,4 +189,4 @@ Para alojar tu aplicación en línea usando Azure, sigue estos pasos para conten
 
 ## Conclusión
 
-Este desafío demostró cómo construir y coordinar un Sistema Multi-Agente utilizando Azure AI Foundry y Semantic Kernel. Al diseñar personalidades distintas para el Analista de Negocios, el Ingeniero de Software y el Propietario del Producto, y configurar un entorno de chat grupal con una estrategia de terminación, creaste un flujo de trabajo colaborativo de IA capaz de recopilar requisitos, desarrollar código y realizar revisiones de código. La estructura de la tarea permite un manejo escalable y descentralizado de problemas complejos usando agentes autónomos e interactivos.
+Este desafío demostró cómo construir y coordinar un Sistema Multi-Agente utilizando Microsoft Foundry y Semantic Kernel. Al diseñar personalidades distintas para el Analista de Negocios, el Ingeniero de Software y el Propietario del Producto, y configurar un entorno de chat grupal con una estrategia de terminación, creaste un flujo de trabajo colaborativo de IA capaz de recopilar requisitos, desarrollar código y realizar revisiones de código. La estructura de la tarea permite un manejo escalable y descentralizado de problemas complejos usando agentes autónomos e interactivos.
