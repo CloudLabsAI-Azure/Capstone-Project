@@ -30,7 +30,7 @@ Los participantes deben tener:
 
 ## Comenzando con el laboratorio
 
-Bienvenido a tu Azure Agentic AI Workshop. Comencemos aprovechando al máximo esta experiencia:
+Bienvenido a tu Capstone Project Workshop. Comencemos aprovechando al máximo esta experiencia:
 
 ## Accediendo a tu Entorno de Laboratorio
 
@@ -62,7 +62,7 @@ Para mayor comodidad, puedes abrir la **lab guide** en una ventana separada sele
 
 ## Gestión de Tu Máquina Virtual
 
-Siéntete libre de **start, stop, or restart (2)** tu máquina virtual según sea necesario desde la pestaña **Resources (1)**. ¡Tu experiencia está en tus manos!
+Siéntete libre de **Start, Stop, or Restart (2)** tu máquina virtual según sea necesario desde la pestaña **Resources (1)**. ¡Tu experiencia está en tus manos!
 
 ![Manage Your Virtual Machine](./media/Agg5.png)
 
