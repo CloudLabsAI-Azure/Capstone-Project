@@ -29,7 +29,7 @@ Participants should have:
 
 ## Getting Started with the lab
 
-Welcome to your Azure Agentic AI Workshop, Let's begin by making the most of this experience:
+Welcome to your Capstone Project Workshop, Let's begin by making the most of this experience:
 
 ## Accessing Your Lab Environment
 
