@@ -35,7 +35,7 @@ Os participantes devem possuir:
 
 ## Iniciando o laboratório
 
-Bem-vindo ao seu Workshop Azure Agentic AI. Vamos começar a tirar o máximo proveito desta experiência:
+Bem-vindo ao seu Workshop Capstone Project. Vamos começar a tirar o máximo proveito desta experiência:
 
 ## Acesso ao seu Ambiente de Laboratório
 
