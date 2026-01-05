@@ -7,7 +7,7 @@ Multi-Agent Systems (MAS) consist of multiple autonomous agents, each with disti
 In this challenge, you will create a Multi-Agent System that accepts a user’s request and processes it through a collection of agents, each designed with a specific persona and area of expertise. The agents will individually analyze the request and contribute their responses based on their defined responsibilities. The final output will be a consolidated collection of answers from all agents, collaboratively addressing the user’s query in a way that reflects the unique perspective of each persona.
 
 
-## Task 1 - Azure AI Foundry Model Deployment & Environment Configuration
+## Task 1 - Microsoft Foundry Model Deployment & Environment Configuration
 
 1. **Azure OpenAI Service Deployment:**
 
@@ -21,9 +21,9 @@ In this challenge, you will create a Multi-Agent System that accepts a user’s 
 
 1. **Deploy Azure OpenAI Models:**
    
-    - Azure OpenAI provides a web-based portal named **Azure AI Foundry Portal** that you can use to deploy, manage, and explore models. You'll start your exploration of Azure OpenAI by using Azure AI Foundry to deploy a model.
+    - Azure OpenAI provides a web-based portal named **Microsoft Foundry Portal** that you can use to deploy, manage, and explore models. You'll start your exploration of Azure OpenAI by using Microsoft Foundry portal to deploy a model.
     
-    - Launch Azure AI Foundry Portal from the overview pane and deploy an Azure OpenAI Model, i.e., `gpt-4o`.
+    - Launch Microsoft Foundry Portal from the overview pane and deploy an Azure OpenAI Model, i.e., `gpt-4o`.
 
         >- **Note:** Make sure the deployments are named **gpt-4o**.
         >- **Note:** Ensure the Deployment Type is set to **Global Standard** and use **2024-11-20** for the model version.
@@ -43,7 +43,7 @@ In this challenge, you will create a Multi-Agent System that accepts a user’s 
 
 1. Open **VS Code** on your Lab VM. Then, open the **CAPSTONE-PROJECT** folder in VS Code from the path `C:\LabFiles\`
 
-1. Update the `.env` file with the Azure AI Foundry deployment details:
+1. Update the `.env` file with the Microsoft Foundry deployment details:
 
     ```
     AZURE_OPENAI_CHAT_DEPLOYMENT_NAME=Replace with your deployment name
@@ -142,7 +142,7 @@ To host your app online using Azure, follow these steps to containerize your app
 
    - **Unique Environment Name**: Enter **CapstoneEnv**.
    - **Azure Subscription to use**: Choose the default subscription that appears and press **Enter**.
-   - **Location Infrastructure Parameter**: Select **East US 2** **(3)** from the options and press **Enter**.
+   - **Location Infrastructure Parameter**: Select **East US 2** from the options and press **Enter**.
    - **ResourceGroupName Infrastructure Parameter**: Type **CapstoneEnv** and press **Enter**.
    - **Resource Group to use**: Select **CapstoneEnv** from the options and press **Enter**.
 
@@ -187,4 +187,4 @@ You have implemented the Multi-Agent Chat system that produces:
 
 ## Conclusion
 
-This challenge demonstrated how to build and coordinate a Multi-Agent System using Azure AI Foundry and Semantic Kernel. By designing distinct personas for Business Analyst, Software Engineer, and Product Owner, and configuring a group chat environment with a termination strategy, you created a collaborative AI workflow capable of gathering requirements, developing code, and performing code reviews. The task structure allows for scalable, decentralized handling of complex problems using autonomous, interactive agents.
+This challenge demonstrated how to build and coordinate a Multi-Agent System using Microsoft Foundry and Semantic Kernel. By designing distinct personas for Business Analyst, Software Engineer, and Product Owner, and configuring a group chat environment with a termination strategy, you created a collaborative AI workflow capable of gathering requirements, developing code, and performing code reviews. The task structure allows for scalable, decentralized handling of complex problems using autonomous, interactive agents.
