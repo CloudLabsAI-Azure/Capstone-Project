@@ -9,7 +9,7 @@ MAS is often used in scenarios where tasks are distributed across different enti
 
 In this challenge, you will create a multi-agent system that takes the user's request and feeds it to a collection of agents. Each agent will have its own persona and responsibility. The final response will be a collection of answers from all agents that together will satisfy the user's request based on each persona's area of expertise.
 
-## Task 1 - Microsoft Model Deployment & Environment Configuration
+## Task 1 - Microsoft Foundry Model Deployment & Environment Configuration
 
 1. Navigate to `https://portal.azure.com` and log in with your Azure credentials.
 
