@@ -34,13 +34,11 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
     - Name: **OpenAI-<inject key="Deployment ID" enableCopy="false"/>** **(4)**
 
-    - Pricing Tier: **Standard SO (5)**
+    - Pricing Tier: **Standard S0 (5)**
 
       ![](./Images/t1s4.png)
 
-1. Click on **Next twice** and click on **Review + Submit**.
-
-1. Review all the values and click on **Create**.
+1. Click on **Next twice** and click on **Create** in **Review + Submit**.
 
    ![](./Images/t1s6.png)
 
@@ -78,9 +76,9 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
    ![](./Images/Image9.png)
 
-1. Navigate to the path `C:\LabFiles\` **(1)**, select **CAPSTONE-PROJECT (2)** and click on **Select Folder (3)**.
+1. Navigate to the path `C:\LabFiles\` **(1)**, select **Capstone-Project (2)** and click on **Select Folder (3)**.
 
-   ![](./Images/Image10a.png)
+   ![](./Images/t1s14.png)
 
 1. Select the **checkbox (1)** and click **Yes,I trust the authors (2)** to proceed.
 
@@ -105,7 +103,7 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
 1. Create a new repository named **Capstone-Project-<inject key="Deployment ID" enableCopy="false"/>** **(1)**. Set the repository visibility to **Public (2)**, then click **Create Repository (3)**.
 
-   ![](./Images/Image16.png)
+   ![](./Images/t2s2.png)
 
 1. Once the new repository is created, **copy the URL** of your repo and paste it into a notepad for future use.
  
