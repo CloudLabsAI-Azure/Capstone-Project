@@ -1,8 +1,120 @@
-[code]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f9;
+    }
+    h1 {
+      color: #333;
+    }
+    .calculator {
+      display: inline-block;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    input {
+      margin: 5px;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007BFF;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .result {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
 
-[code]
+  <h1>Simple Calculator</h1>
+  <div class="calculator">
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <br>
+    <button onclick="calculate('+')">+</button>
+    <button onclick="calculate('-')">-</button>
+    <button onclick="calculate('*')">×</button>
+    <button onclick="calculate('/')">÷</button>
+    <div class="result" id="result"></div>
+  </div>
 
-[code]
-# Your Python code here
-[/code]
+  <script>
+    function calculate(operation) {
+      const num1 = parseFloat(document.getElementById('num1').value);
+      const num2 = parseFloat(document.getElementById('num2').value);
+      const resultDiv = document.getElementById('result');
+
+      // Clear previous result
+      resultDiv.textContent = '';
+
+      // Input validation
+      if (isNaN(num1) || isNaN(num2)) {
+        resultDiv.textContent = 'Error: Please enter valid numbers.';
+        resultDiv.className = 'result error';
+        return;
+      }
+
+      let result;
+      switch (operation) {
+        case '+':
+          result = num1 + num2;
+          break;
+        case '-':
+          result = num1 - num2;
+          break;
+        case '*':
+          result = num1 * num2;
+          break;
+        case '/':
+          if (num2 === 0) {
+            resultDiv.textContent = 'Error: Division by zero is not allowed.';
+            resultDiv.className = 'result error';
+            return;
+          }
+          result = num1 / num2;
+          break;
+        default:
+          resultDiv.textContent = 'Error: Invalid operation.';
+          resultDiv.className = 'result error';
+          return;
+      }
+
+      // Display the result
+      resultDiv.textContent = `Result: ${result}`;
+      resultDiv.className = 'result';
+    }
+  </script>
+
+</body>
+</html>
+
+[HTML code]
 
