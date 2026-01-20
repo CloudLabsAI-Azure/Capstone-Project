@@ -157,13 +157,13 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
     ![](./Images/Image14a.png)
 
-<!-- 1. Create a file named **`push_to_github.sh` (2)** under the **`src/ui` (1)** directory. **Paste the code (3)** from the link below and save the file.
+ 1. Create a file named **`push_to_github.sh` (2)** under the **`src/ui` (1)** directory. **Paste the code (3)** from the link below and save the file.
 
     ```
     https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Capstone-Project/refs/heads/soln-guide/src/ui/push_to_github.sh
     ```
 
-    ![](./Images/Image15.png) -->
+    ![](./Images/Image15.png)
 
 1. Update the following env variables in `.env` file with the values you copied in Task 2 and save the file.
     ```
