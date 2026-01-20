@@ -31,6 +31,18 @@
     },
     "uiAppExists": {
       "value": "${SERVICE_UI_RESOURCE_EXISTS=false}"
+    },
+    "githubRepoUrl": {
+      "value": "${GITHUB_REPO_URL=}"
+    },
+    "githubPat": {
+      "value": "${GITHUB_PAT=}"
+    },
+    "githubUsername": {
+      "value": "${GITHUB_USERNAME=}"
+    },
+    "gitUserEmail": {
+      "value": "${GIT_USER_EMAIL=}"
     }
   }
 }

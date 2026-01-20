@@ -1,18 +1,8 @@
 # Copyright (c) Microsoft. All rights reserved.
 
-
 from dataclasses import dataclass
-from typing import Annotated, Any
-
-from pydantic import BaseModel
-
-from semantic_kernel.connectors.ai.open_ai import OpenAIEmbeddingPromptExecutionSettings
-from semantic_kernel.data import (
-    VectorStoreRecordDataField,
-    VectorStoreRecordKeyField,
-    VectorStoreRecordVectorField,
-    vectorstoremodel,
-)
+from typing import Optional, List
+from pydantic import BaseModel, Field
 
 ###
 # The data model used for this sample is based on the hotel data model from the Azure AI Search samples.
@@ -25,22 +15,19 @@ from semantic_kernel.data import (
 ###
 
 
-@vectorstoremodel
 @dataclass
 class EmployeeHandbookModel(BaseModel):
-    chunk_id: Annotated[str, VectorStoreRecordKeyField]
-    parent_id: Annotated[str | None, VectorStoreRecordDataField()] = None
-    content: Annotated[str, VectorStoreRecordDataField()]
-    title: Annotated[str, VectorStoreRecordDataField()]
-    url: Annotated[str, VectorStoreRecordDataField()]
-    filepath: Annotated[str, VectorStoreRecordDataField()]
-    contentVector: Annotated[
-        list[float] | None,
-        VectorStoreRecordVectorField(
-            dimensions=1536,
-            local_embedding=True,
-            embedding_settings={"embedding": OpenAIEmbeddingPromptExecutionSettings(dimensions=1536)},
-        ),
-    ] = None
+    """Data model for employee handbook documents with vector embeddings."""
+    
+    chunk_id: str = Field(..., description="Unique identifier for the chunk")
+    parent_id: Optional[str] = Field(None, description="Parent document ID")
+    content: str = Field(..., description="Text content of the chunk")
+    title: str = Field(..., description="Title of the document")
+    url: str = Field(..., description="URL of the document")
+    filepath: str = Field(..., description="File path of the document")
+    contentVector: Optional[List[float]] = Field(
+        None, 
+        description="Vector embedding of the content (1536 dimensions for OpenAI)"
+    )
 
    

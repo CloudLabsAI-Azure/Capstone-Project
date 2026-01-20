@@ -5,6 +5,14 @@ param location string
 param uiAppExists bool
 param emptyContainerImage string = 'mcr.microsoft.com/azuredocs/containerapps-helloworld:latest'
 param userAssignedIdentityName string = '${prefix}-ui-identity-${uniqueId}'
+param azureOpenAIEndpoint string = ''
+param azureOpenAIKey string = ''
+param azureOpenAIChatDeploymentName string = ''
+param azureOpenAIApiVersion string = '2024-02-01'
+param githubRepoUrl string = ''
+param githubPat string = ''
+param githubUsername string = ''
+param gitUserEmail string = ''
 
 resource containerAppEnv 'Microsoft.App/managedEnvironments@2023-11-02-preview' = {
   name: '${prefix}-containerAppEnv-${uniqueId}'
@@ -79,6 +87,40 @@ resource uiContainerApp 'Microsoft.App/containerApps@2023-11-02-preview' = {
             cpu: 1
             memory: '2Gi'
           }
+          env: [
+            {
+              name: 'AZURE_OPENAI_ENDPOINT'
+              value: azureOpenAIEndpoint
+            }
+            {
+              name: 'AZURE_OPENAI_API_KEY'
+              value: azureOpenAIKey
+            }
+            {
+              name: 'AZURE_OPENAI_CHAT_DEPLOYMENT_NAME'
+              value: azureOpenAIChatDeploymentName
+            }
+            {
+              name: 'AZURE_OPENAI_API_VERSION'
+              value: azureOpenAIApiVersion
+            }
+            {
+              name: 'GITHUB_REPO_URL'
+              value: githubRepoUrl
+            }
+            {
+              name: 'GITHUB_PAT'
+              value: githubPat
+            }
+            {
+              name: 'GITHUB_USERNAME'
+              value: githubUsername
+            }
+            {
+              name: 'GIT_USER_EMAIL'
+              value: gitUserEmail
+            }
+          ]
         }
       ]
     }

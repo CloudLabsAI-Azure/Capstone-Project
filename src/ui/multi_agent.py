@@ -1,27 +1,35 @@
 import os
 import asyncio
+from typing import List, Dict, Any
 
-from semantic_kernel.agents import AgentGroupChat, ChatCompletionAgent
-from semantic_kernel.agents.strategies.termination.termination_strategy import TerminationStrategy
-from semantic_kernel.agents.strategies.selection.kernel_function_selection_strategy import (
-    KernelFunctionSelectionStrategy,
-)
-from semantic_kernel.connectors.ai.function_choice_behavior import FunctionChoiceBehavior
-from semantic_kernel.connectors.ai.open_ai.services.azure_chat_completion import AzureChatCompletion
-from semantic_kernel.contents.chat_message_content import ChatMessageContent
-from semantic_kernel.contents.utils.author_role import AuthorRole
-from semantic_kernel.kernel import Kernel
+from agent_framework import ChatAgent
+from agent_framework.azure import AzureOpenAIChatClient
+from azure.identity.aio import DefaultAzureCredential
+from dotenv import load_dotenv
 
+# Load environment variables
+load_dotenv()
 
+class MultiAgentOrchestrator:
+    def __init__(self):
+        self.business_analyst = None
+        self.software_engineer = None
+        self.product_owner = None
+        self.credential = None
 
-class ApprovalTerminationStrategy(TerminationStrategy):
-    """A strategy for determining when an agent should terminate."""
- 
-    async def should_agent_terminate(self, agent, history):
-        """Check if the agent should terminate."""
-        return NotImplementedError("Code to be implemented by the student")
+    async def initialize(self):
+        """Initialize the agents."""
+        pass
+
+    async def orchestrate(self, user_input: str, max_iterations: int = 5) -> List[Dict[str, Any]]:
+        """Orchestrate the multi-agent conversation."""
+        pass
+
+    async def cleanup(self):
+        """Clean up resources."""
+        pass
 
 
 async def run_multi_agent(input: str):
-    """implement the multi-agent system."""
-    return responses
+    """Main entry point for multi-agent orchestration."""
+    pass
