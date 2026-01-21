@@ -60,13 +60,13 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
 1. Click on **Customize** and provide the following details to deploy a gpt-4o model:
 
-    - Deployment name: **gpt4-o (1)**
+    - Deployment name: **gpt-4o (1)**
     - Deployment type: **Global Standard (2)**
     - Model Version: **2024-11-20 (3)**
     - Set the **Tokens per Minute Rate Limit** to **200k (4)**.
     - Leave the other values to default and click on **Deploy (5)**.
 
-      ![](./Images/t1s11.png)
+      ![](./Images/t1s11-1.png)
 
 1. Once the gpt-4o deployment gets completed, copy the **Target URl (1)** and **Key (2)**. **Paste** these values in a notepad for further use. 
 
@@ -155,7 +155,7 @@ In this challenge, you will create a multi-agent system that takes the user's re
     https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Capstone-Project/refs/heads/soln-guide/src/ui/multi_agent.py
     ```
 
-    ![](./Images/Image14a.png)
+    ![](./Images/Image14a-1.png)
 
  1. Create a file named **`push_to_github.sh` (2)** under the **`src/ui` (1)** directory. **Paste the code (3)** from the link below and save the file.
 
@@ -245,9 +245,9 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
     ![](./Images/Image34.png)
 
-1. Navigate to the repository **Capstone-Project-<inject key="Deployment ID" enableCopy="false"/>** and verify that the `generated_app.html` file has been created, containing the code for your simple calculator.
+1. Navigate to the repository **Capstone-Project-<inject key="Deployment ID" enableCopy="false"/>** and verify that the `index.html` file has been created, containing the code for your simple calculator.
 
-    ![](./Images/Image37.png)
+    ![](./Images/Image37-1.png)
 
 ## Success Criteria
 
