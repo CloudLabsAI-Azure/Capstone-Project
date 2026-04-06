@@ -13,9 +13,6 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
 1. Navigate to `https://portal.azure.com` and log in with your Azure credentials.
 
-    - **Email/Username**: <inject key="AzureAdUserEmail"></inject>
-    - **Password**: <inject key="AzureAdUserPassword"></inject>
-
 1. Search for **Azure OpenAI (1)** and select **Azure OpenAI (2)** from the Services . 
 
    ![](./Images/t1s2.png)
@@ -32,7 +29,7 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
     - Region: **East US 2 (3)**
 
-    - Name: **OpenAI-<inject key="Deployment ID" enableCopy="false"/>** **(4)**
+    - Name: **OpenAI-XXXXX** **(4)** (replace XXXXX with the DeploymentID)
 
     - Pricing Tier: **Standard S0 (5)**
 
@@ -101,7 +98,7 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
 1. Sign in to GitHub at [https://github.com](https://github.com).  
 
-1. Create a new repository named **Capstone-Project-<inject key="Deployment ID" enableCopy="false"/>** **(1)**. Set the repository visibility to **Public (2)**, then click **Create Repository (3)**.
+1. Create a new repository named **Capstone-Project-XXXXXX** **(1)**. Set the repository visibility to **Public (2)**, then click **Create Repository (3)**.
 
    ![](./Images/t2s2.png)
 
@@ -121,11 +118,11 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
    ![](./Images/T206.png)
   
-1. Enter **<inject key="Deployment ID" enableCopy="false"/>-PAT-RepoAccess** **(1)** as the name for your token. Set an expiration date to **30 days (2)**.  
+1. Enter **XXXXXX-PAT-RepoAccess** **(1)** as the name for your token. Set an expiration date to **30 days (2)**.  
 
    ![](./Images/upImage20.png)
 
-1. Scroll down and under **Repository Access**, click on **Only select repositories (1)**. Search for the **Capstone-Project-<inject key="Deployment ID" enableCopy="false"/> repository** **(2)** and **select it (3)**.
+1. Scroll down and under **Repository Access**, click on **Only select repositories (1)**. Search for the **Capstone-Project-XXXXXX repository** **(2)** and **select it (3)**.
 
    ![](./Images/Image21.png)  
 
@@ -194,9 +191,7 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
     ![](./Images/Image28.png)
 
-1. Sign in using the following credentials:-
-    - **Email/Username**: <inject key="AzureAdUserEmail"></inject>
-    - **Password**: <inject key="AzureAdUserPassword"></inject>
+1. Sign in using the following credentials your lab credentials.
 
 1. Run the following command to provision the web app and required resources to azure:-
 
@@ -245,7 +240,7 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
     ![](./Images/Image34.png)
 
-1. Navigate to the repository **Capstone-Project-<inject key="Deployment ID" enableCopy="false"/>** and verify that the `index.html` file has been created, containing the code for your simple calculator.
+1. Navigate to the repository **Capstone-Project-XXXXXX** and verify that the `index.html` file has been created, containing the code for your simple calculator.
 
     ![](./Images/Image37-1.png)
 

@@ -5,8 +5,9 @@ import subprocess
 import asyncio
 from typing import List, Dict, Any
 
-from agent_framework import ChatAgent
-from agent_framework.azure import AzureOpenAIChatClient
+# ADD THESE:
+from autogen_agentchat.agents import AssistantAgent
+from autogen_ext.models.openai import AzureOpenAIChatCompletionClient
 from azure.identity.aio import DefaultAzureCredential
 from dotenv import load_dotenv
 
