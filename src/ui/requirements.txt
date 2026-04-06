@@ -1,4 +1,6 @@
-semantic-kernel
+autogen-agentchat==0.4.0
+autogen-ext[openai]==0.4.0
+openai
 asyncio
 python-dotenv
 azure-search-documents
@@ -6,3 +8,5 @@ fastapi
 pandas
 uvicorn
 streamlit
+requests
+azure-identity
